@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>City Life</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a
+              class="link"
+              href="https://talent.start2impact.it/profile/luca-distaso"
+              target="_blank"
+              >Chi sono</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://github.com/lucadistaso"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <div class="circle-shadow">
+              <a
+                class="user-icon"
+                href="https://www.linkedin.com/in/luca-distaso/"
+                target="_blank"
+                ><span>L</span></a
+              >
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="search-section" id="search-section">
+        <a href="index.html"><img src="img/logo.png" /></a>
+        <form class="searchbar" id="searchbar">
+          <img src="img/search.png" class="search-icon" />
+          <input
+            type="text"
+            autocomplete="off"
+            class="user-input"
+            id="user-input"
+            placeholder="Type a city"
+          />
+          <button id="button" type="button" name="button">
+            <img src="img/x.svg" alt="" />
+          </button>
+          <ul class="autocomplete-list" id="autocomplete"></ul>
+          <p class="error-message" id="error-message"></p>
+          <input type="submit" class="s-btn" value="City Search" />
+        </form>
+      </section>
+
+      <section class="city-data-section" id="city-data">
+        <div class="background-photo" id="background-photo">
+          <h2 class="city-data-title" id="city-data-title"></h2>
+          <div class="city-data-summary" id="city-data-summary"></div>
+        </div>
+        <ul class="city-data-categories" id="city-data-categories"></ul>
+        <h3 class="city-data-score" id="city-data-score"></h3>
+      </section>
+      <div class="lang">
+        City life offered by:
+        <a href="https://github.com/lucadistaso" target="_blank">Luca</a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

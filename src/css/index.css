@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+}
+body {
+  background: #202124;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+/* Header */
+header {
+  height: 60px;
+}
+
+li {
+  list-style: none;
+}
+.navbar {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navbar ul li {
+  margin-left: 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.circle-shadow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-shadow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.user-icon span {
+  font-size: 18px;
+  color: #fff;
+}
+
+.user-icon {
+  background-color: #ef6c00;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* Layout */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+  padding-top: 1em;
+}
+
+/* Search */
+
+.search-section {
+  margin-top: 22%;
+  text-align: center;
+}
+
+.searchbar {
+  margin: 0 auto;
+  width: 48%;
+  position: relative;
+}
+
+.user-input {
+  background: transparent;
+  display: block;
+  border: 1px solid #5f6368;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px;
+  padding-left: 45px;
+  border-radius: 25px;
+  width: 100%;
+  transition: box-shadow 100ms;
+  outline: none;
+}
+
+.user-input:hover {
+  background: #303134;
+  border: none;
+  box-shadow: 0 1px 6px 0 #171717;
+}
+
+.autocomplete-item {
+  width: 100%;
+  padding: 0.5em;
+  background: #303134;
+  border: 0;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #bdc1c6;
+  margin: 0 20px 0 14px;
+}
+
+.autocomplete-item:hover {
+  background-color: #3c4043;
+  cursor: pointer;
+}
+
+.autocomplete-list {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background: #303134;
+  width: 100%;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 4px 6px 0 #171717;
+  border: 0;
+  font-size: 14px;
+  color: #bdc1c6;
+  overflow: hidden;
+}
+
+.autocomplete-item {
+  padding: 0.5em;
+}
+
+.error-message {
+  color: #cc0000;
+  margin-top: 1.5em;
+}
+
+.search-icon {
+  width: 20px;
+  opacity: 0.4;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+
+#button {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  position: absolute;
+  top: 13px;
+  right: 24px;
+  height: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.s-btn {
+  background: #303134;
+  border: 1px solid #303134;
+  padding: 9px 15px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 28px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 100ms;
+}
+
+.s-btn:hover {
+  border: 1px solid #aaa;
+}
+
+/* Scores */
+
+.city-data-section {
+  width: 90%;
+  margin: 2em auto;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.background-photo {
+  background-position: center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.city-data-title {
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+.city-data-categories {
+  list-style: none;
+  margin-top: 2em;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.city-data-categorie {
+  padding: 0.6em;
+}
+
+.city-data-score {
+  font-size: 2rem;
+  margin: 1.5em auto 0;
+  width: fit-content;
+}
+
+/* Footer */
+
+.lang {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+.lang a {
+  margin-left: 5px;
+  color: #8ab4f8;
+}
+.lang a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .city-data-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.8em;
+  }
+
+  .searchbar {
+    width: 70%;
+  }
+}
