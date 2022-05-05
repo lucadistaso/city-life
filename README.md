@@ -12,7 +12,7 @@ Puoi farlo usando il comando:
 npm install npm@latest -g
 ```
 
-#Installazione
+# Installazione
 
 1-Clonare la reposity locale con il comando git:
 
