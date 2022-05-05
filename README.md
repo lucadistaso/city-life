@@ -3,24 +3,37 @@
 Progetto per start2impact.
 Versione finale.
 
-# Welcome
+# Prerequisiti 
 
-This project has been created using **webpack-cli**, you can now run
+Per usare l applicazione bisogna installare NODE sul proprio sistema.
+Puoi farlo usando il comando:
+
+```
+npm install npm@latest -g
+```
+
+#Installazione
+
+1-Clonare la reposity locale con il comando git:
+
+```
+git clone https://github.com/lucadistaso/city-life
+```
+
+2-Installare NPM:
+
+```
+npm install
+```
+
+3-Usare build:
 
 ```
 npm run build
 ```
+ 4-Aprire build/index.html
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
-
-
-## Description
+## Descrizione
 
 Lo scopo di City life è quello di mostrare la qualità della vita di una determinata città attraverso diversi punteggi che vanno a costituire un punteggio totale.
 
@@ -45,24 +58,7 @@ L'applicazione è stata costruita usando :
 - Css
 - Javascript
 
-![Readme-cityLife](https://github.com/lucadistaso/immagini/blob/main/WhatsApp%20Image%202022-05-05%20at%2010.29.09.jpeg)
-
-
-
-
-
-## Color Reference
-
-Ispirandomi al mio [portfolio](https://lucadistaso.github.io/) ho usato un gradiente di sfondo
-partendo dal grigio (#676766) fino al bianco.
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#676766](https://via.placeholder.com/10/676766?text=+) #676766 |
-| Example Color | ![#878787](https://via.placeholder.com/10/878787?text=+) #878787 |
-| Example Color | ![#b8b8b8](https://via.placeholder.com/10/b8b8b8?text=+) #b8b8b8 |
-| Example Color | ![#000000](https://via.placeholder.com/10/fff?text=+) #fff |
-
+![Readme-cityLife](https://github.com/lucadistaso/immagini/blob/main/city%20life.png)
 
 
 ## Authors
